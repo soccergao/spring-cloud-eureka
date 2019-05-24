@@ -9,7 +9,8 @@ eureka:
   instance:
     hostname: localhost
   server:
-    eviction-interval-timer-in-ms: 5000 #驱逐下线的服务，间隔5秒，默认是60
+    eviction-interval-timer-in-ms: 5000 # 驱逐下线的服务，间隔5秒，默认是60
+    enable-self-preservation: false # 设为false，关闭自我保护主要
   client:
     register-with-eureka: false
     fetch-registry: false
